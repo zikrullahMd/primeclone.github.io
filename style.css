@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+body{
+    font-family:  Ember,Amazon Arabic Ember,Arial,sans-serif!important;
+    background-color: #0F171E;
+    color: white;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%vh;
+    height: 5rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19232E;
+}
+nav img{
+    height: 2.2rem;
+}
+
+.user-name{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.user-name img{
+    padding-right: 0.5rem;
+}
+nav ul{
+    padding-left: 2rem;
+    display: inline-flex;
+    position: relative;
+    bottom: 10px;
+}
+.active{
+    border-bottom: 1px solid white;
+    padding: 0 0;
+    color: white;
+}
+nav ul li{
+    padding: 0 0.5rem;
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li:hover{
+    color: #eee;
+}
+
+.latest-movies img{
+    width: 100%;
+}
+.latest-movies button{
+    height: 19rem;
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0Ljc2MyAxNy4yMzd2LTIuNDc0bC0xNCAxNGExLjc0OCAxLjc0OCAwIDAwMCAyLjQ3NGMuNjgzLjY4NCAxLjc5LjY4NCAyLjQ3NCAwbDE0LTE0YTEuNzQ4IDEuNzQ4IDAgMDAwLTIuNDc0bC0xNC0xNEExLjc1IDEuNzUgMCAwMC43NjMgMy4yMzdsMTQgMTR6IiBmaWxsPSIjRUZGMUYxIi8+PC9zdmc+);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+.movies-list-section{
+    margin-top: 1rem;
+    margin-left: 2.8rem;
+}
+.movies-list-section h2{
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+.movies-list-section ul{
+    margin-bottom: 1.2rem;
+}
+.movie-list-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 0.5px;
+}
+.movie-list-grid img{
+    cursor: pointer;
+    height: 10rem;
+    width: 18rem;
+    border-radius: 4px;
+}
+.movie-list-grid img:hover{
+    box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.3);
+}
+.small img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4px;
+}
+
+.small{
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.large img{
+    width: 30rem;
+    height: 12rem;
+}
+
+.movies-list-section button{
+    height: 10rem;
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    border: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0Ljc2MyAxNy4yMzd2LTIuNDc0bC0xNCAxNGExLjc0OCAxLjc0OCAwIDAwMCAyLjQ3NGMuNjgzLjY4NCAxLjc5LjY4NCAyLjQ3NCAwbDE0LTE0YTEuNzQ4IDEuNzQ4IDAgMDAwLTIuNDc0bC0xNC0xNEExLjc1IDEuNzUgMCAwMC43NjMgMy4yMzdsMTQgMTR6IiBmaWxsPSIjRUZGMUYxIi8+PC9zdmc+);
+    background-color: rgba(15,23,30,.5);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+.movies-list-section button:hover{
+    background-color: rgba(15,23,30,.8);
+}
